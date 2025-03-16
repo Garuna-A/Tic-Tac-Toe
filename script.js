@@ -40,11 +40,13 @@ blocks.forEach(block =>{
             if(counter%2 == 0){
                 block.innerHTML = "O";
                 var id = parseInt(block.id);
+                block.style.border = "4px solid #EB5B00"
                 board[id] = "O";
                 console.log(id);
             }
             else {
                 block.innerHTML = "X";
+                block.style.border = "4px solid  #A0C878";
                 var id = parseInt(block.id);
                 board[id] = "X";
                 console.log(id);
